@@ -1,5 +1,5 @@
 :do {
 			/ip dns static add name="server_77_68_98_114.techno-platform.group" address="77.68.98.114";
 } on-error={
-			/ip dns static set [find where name="server_77_68_98_114.techno-platform.group"] address="77.68.98.114";
+			/ip dns static set [find where address="77.68.98.114"] name="server_77_68_98_114.techno-platform.group";
 }
